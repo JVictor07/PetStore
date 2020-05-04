@@ -1,10 +1,10 @@
 /*============================ REPETITIONS ================================*/
-.footer__top__benefits,
-.benefits__item,
-.footer__top__form,
-.footer__down,
-.footer__down__about-us,
 .about-us__social-medias a,
+.footer__down__about-us,
+.footer__top__benefits,
+.footer__top__form,
+.benefits__item,
+.footer__down,
 .footer__dev {
   display: flex;
   align-items: center;
@@ -15,10 +15,10 @@
   justify-content: center;
 }
 
+.about-us__social-medias,
 .footer__top__benefits,
-.footer__down,
 .group--dom--wrap,
-.about-us__social-medias {
+.footer__down {
   justify-content: space-between;
 }
 
@@ -100,6 +100,7 @@
 
 @media(max-width:700px) {
 
+  .footer__top__form form,
   .footer__top__form input,
   .footer__top__form input[type=text],
   .footer__top__form input[type=email] {
