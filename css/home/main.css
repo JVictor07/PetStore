@@ -1,0 +1,202 @@
+/*================= REPETITIONS ==================*/
+.fast-navs__group li a,
+.main__pets-section,
+.news__actions {
+  display: flex;
+  align-items: center;
+}
+
+.fast-navs__group li a,
+.news__actions {
+  justify-content: center;
+}
+/*=============== END REPETITIONS ==================*/
+
+.main__nav {
+  background: #ffa200;
+  padding: 22px 0 20px 0;
+}
+
+.main__nav ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 10px;
+  row-gap: 10px;
+}
+
+@media(max-width:1200px){
+  .main__nav ul {
+    grid-template-columns: 1fr 1fr;
+  }
+  .main__nav a,
+  .main__nav a img {
+  width: 100%
+}
+}
+
+@media(max-width:650px){
+  .main__nav ul {
+    grid-template-columns: 1fr;
+  }
+}
+/* ============================ END MAIN NAV ============================ */
+
+/* ============================ NEWS ===========================*/
+.main__news h2{
+  margin: 25px 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.news__container {
+  display: flex;
+  overflow-x: scroll;
+  margin-bottom: 30px;
+}
+
+.news__container::-webkit-scrollbar{
+  display: none;
+}
+
+.news__actions {
+  margin: auto;
+  width: 200px;
+}
+
+@media(max-width:500px){
+  .news__actions {
+    display: none;
+  }
+}
+
+.circles__item {
+  background: #8158c5;
+  width: 12px;
+  height: 12px;
+
+  border-radius: 100%;
+  border: none;
+  
+  margin: 0 10px;
+}
+
+.circles__item:hover {
+  background: #ffa200;
+}
+
+/* =============================================== */
+.main__pets-section {
+  margin-top: 30px;
+  margin-bottom: 50px;
+  justify-content: space-between;
+}
+
+.main__pets-section a + a{
+  margin-left: 15px;
+}
+
+@media(max-width:1200px){
+  .main__pets-section a,
+  .main__pets-section a img{
+    width: 100%;
+  }
+}
+
+@media(max-width:700px){
+  .main__pets-section {
+    flex-direction: column;
+  }
+
+  .main__pets-section a + a{
+    margin: 15px 0 0 0;
+  }
+}
+
+/* ==================== FEATURED =========================== */
+
+.main__featured {
+  text-align: center;
+}
+
+.featureds__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  row-gap: 15px;
+  max-height: 790px;
+
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+.featureds__container .item__buy {
+  width: 21%;
+}
+
+@media(max-width:1300px) {
+  .featureds__container .item__buy {
+    width: 23%;
+  }
+}
+
+@media(max-width:1200px) {
+  .featureds__container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .featureds__container .item__buy {
+    width: 32%;
+  }
+}
+
+@media(max-width:900px) {
+  .featureds__container {
+    grid-template-columns: 1fr 1fr;
+  }
+  .featureds__container  .item__buy {
+    width: 45%;
+  }
+}
+
+@media(max-width:620px) {
+  .featureds__container {
+    grid-template-columns: 1fr;
+  }
+  .featureds__container .item__buy {
+    width: 90%;
+  }
+}
+
+.main__featured button{
+  margin: 40px 0;
+  height: 40px;
+  width: 215px;
+}
+
+button#less_featured {
+  width: auto;
+  background: #7f7f7f;
+  display: none;
+  margin-right: 10px;
+}
+
+/* ======================== PETS SECTION ========================== */
+.fast-navs__group {
+  position: fixed;
+  bottom: 20px;
+  left: 1270px;
+}
+
+.fast-navs__group li a{
+  background: #7f7f7f;
+  color: #fff;
+
+  width: 55px;
+  height: 55px;
+  border-radius: 100%;
+
+  font-size: 35px;
+}
+
+.fast-navs__group li + li a{
+  margin-top: 10px;
+  background: #4dc247;
+}

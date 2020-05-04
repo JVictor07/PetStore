@@ -1,0 +1,172 @@
+html * {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+button, a, i {
+  cursor: pointer;
+}
+
+button, input {
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+h1 {
+  display: none;
+}
+
+.container {
+  width: 1170px;
+  margin: auto;
+}
+
+@media(max-width:1170px){
+  .container {
+    width: auto;
+    margin: 0 20px;
+  }
+}
+
+.org-btn {
+  background: #ffa200;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.dropdown {
+  display: none;
+  background: white;
+  position: absolute;
+  list-style: none;
+  padding: 0;
+
+  box-shadow: 2px 2px 4px rgba(22, 21, 21, 0.226);
+}
+
+.dropdown__item > a{
+  text-decoration: none;
+  display: block;
+  color: #000;
+}
+
+.dropdown__item > a:hover{
+  background: gray;
+  color: white;
+}
+
+.dropdown__checkbox {
+  display: none
+}
+
+.dropdown__checkbox:checked ~ .dropdown{
+  display: block;
+}
+
+.nav__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+}
+
+.nav__item > a{
+  display: block;
+  text-decoration: none;
+}
+
+/* =========================== ITEMS ========================= */
+.store__item {
+  display: flex;
+  flex-direction: column;
+  margin-right: 12px;
+}
+
+.item__featured__container{
+  display: block;
+  height: 30px;
+  width: 75px;
+}
+
+.item__featured {
+  text-transform: uppercase;
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  
+  font-size: 12px;
+  background: #8158c5;
+  color: #fff;
+
+}
+
+.item__img:hover ~ .item__buy,
+.item__buy:hover {
+  display: flex;
+}
+
+.item__buy {
+  position: absolute;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 280px;
+  height: 310px;
+  background: #8258c58a;
+}
+
+.item__legends {
+  text-align: center;
+}
+
+.item__name {
+  display: block;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.item__prices {
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+.prices__old{
+  text-decoration: line-through;
+}
+
+.prices__new{
+  font-weight: 600;
+}
+
+.item__payment {
+  display: block;
+  margin-top: 3px;
+  font-size: 12px;
+}
+
+.actions__arrow {
+  background: transparent;
+  border: none;
+  font-size: 40px;
+  font-weight: 100;
+  color: #7f7f7f;
+}
+
+.actions__arrow:hover {
+  color: #ffa200;
+}

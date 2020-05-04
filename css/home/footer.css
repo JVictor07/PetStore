@@ -1,0 +1,240 @@
+/*============================ REPETITIONS ================================*/
+.footer__top__benefits,
+.benefits__item,
+.footer__top__form,
+.footer__down,
+.footer__down__about-us,
+.about-us__social-medias a,
+.footer__dev {
+  display: flex;
+  align-items: center;
+}
+
+.about-us__social-medias a,
+.footer__dev {
+  justify-content: center;
+}
+
+.footer__top__benefits,
+.footer__down,
+.group--dom--wrap,
+.about-us__social-medias {
+  justify-content: space-between;
+}
+
+/*========================== END REPETITIONS ================================*/
+
+/* =========================== FOOTER ================================= */
+.footer__top {
+  background: #8158c5;
+  min-height: 340px;
+}
+
+.footer__top__benefits{
+  border-bottom: 2px solid #ffa200;
+  flex-wrap: wrap;
+}
+
+.benefits__item {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: white;
+  padding: 20px;
+}
+
+.benefits__item img{
+  margin-right: 10px;
+}
+  /*------------ END FOOTER TOP BENEFITS -----------------  */
+
+  /*------------------ FOOTER TOP FORM --------------------  */
+
+.footer__top__form {
+  flex-direction: column;
+  color: white;
+}
+
+.footer__top__form h2{
+  font-size: 24px;
+  margin: 50px 0 20px 0;
+}
+
+.footer__top__form span{
+  font-size: 14px;
+}
+
+.footer__top__form form {
+  display: flex;
+  margin-top: 70px;
+  margin-bottom: 30px;
+}
+
+.footer__top__form input{
+  border: none;
+  border-bottom: 1px solid white;
+
+  background: none;
+
+  font-size: 14px;
+  color: white;
+
+  margin-right: 10px;
+}
+
+.footer__top__form input[type=text] {
+  width: 200px;
+}
+
+.footer__top__form input[type=email] {
+  width: 300px;
+}
+
+.footer__top__form input::-webkit-input-placeholder{
+  color: white;
+}
+
+.footer__top__form input::-moz-placeholder{
+  color: white;
+}
+
+@media(max-width:700px) {
+
+  .footer__top__form input,
+  .footer__top__form input[type=text],
+  .footer__top__form input[type=email] {
+    width: 100%;
+  }
+
+  .footer__top__form form {
+    margin-top: 40px;
+    margin-bottom: 30px;
+    flex-direction: column;
+  }
+
+  .footer__top__form input[type=email] {
+    margin: 30px 0;
+  }
+}
+
+/* ----------------- END FOOTER TOP ---------------- */
+/* ------------------ FOOTER DOWN ----------------- */
+.footer__down {
+  padding: 30px 0 45px 0;
+  max-height: 320px;
+}
+
+.group--dom--wrap {
+  margin-left: 100px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media(max-width:1000px) {
+  .footer__down {
+    max-height: none;
+    flex-wrap: wrap;
+  }
+  .group--dom--wrap {
+    margin: 20px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.footer__down h2{
+  color: #8158c5;
+  font-size: 12px;
+  margin: 15px 0 10px 0;
+}
+
+.footer__down__about-us {
+  flex-direction: column;
+  margin: auto;
+}
+
+.about-us__social-medias {
+  display: flex;
+  width: 150px;
+  padding: 0;
+
+  margin: 20px 0;
+}
+
+.about-us__social-medias a{
+  background: #7f7f7f;
+  border-radius: 100%;
+  padding: 0;
+
+  text-decoration: none;
+  font-size: 18px;
+  width: 30px;
+  height: 30px;
+  color: white;
+}
+
+.about-us__social-medias a:hover{
+  background: #ffa200;
+}
+
+.footer__down__about-us span{
+  font-size: 10px;
+}
+
+/* -------------------------------- */
+.footer__down__nav,
+.footer__down__contacts {
+  font-size: 12px;
+}
+
+@media(max-width:400px) {
+  .footer__down__nav {
+    margin-right: 15px;
+  }
+}
+
+.footer__down__nav li a {
+  color: #000;
+}
+
+.footer__down__nav li a:hover {
+  color: #ffa200;
+}
+
+.footer__down__nav li + li,
+.footer__down__contacts li + li{
+  margin: 10px 0;
+}
+
+/* --------------------------------- */
+.footer__down__payments ul{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-row: 1fr 1fr;
+  column-gap: 8px;
+  row-gap: 3px;
+  list-style: none;
+}
+
+@media(max-width:640px) {
+  .footer__down__payments ul{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media(max-width:430px){
+  .footer__down__payments ul{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.footer__dev {
+  border-top: 1px solid #c4bdbd;
+  font-size: 10px;
+  padding: 15px 0;
+}
+
+.footer__dev img{
+  margin-left: 15px;
+}

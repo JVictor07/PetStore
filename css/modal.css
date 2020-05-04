@@ -1,0 +1,174 @@
+.shopping__modal {
+  top: 0;
+  left: 0;
+  position: fixed;
+  min-height: 100vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.486);
+
+  display: none;
+  z-index: 2;
+}
+
+.modal__container {
+  min-height: 100vh;
+  z-index: 3;
+  width: 400px;
+  margin-left: auto;
+  background: white;
+  color: #7f7f7f;
+}
+
+.modal__header,
+.modal__content__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.modal__header {
+  border-bottom: 2px solid #000;
+  padding: 10px 15px;
+  font-size: 14px;
+}
+
+.modal__header button{
+  background: transparent;
+  border: 0;
+  font-size: 20px;
+}
+
+.modal__content {
+  margin: 0 10px;
+}
+
+.modal__content__header {
+  padding: 10px 0;
+  font-size: 12px;
+  border-bottom: 1px solid #7f7f7f;
+}
+
+.modal__content__header span + span{
+  margin-right: 35px;
+}
+
+.modal__content__item {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  padding: 10px 0;
+
+  border-bottom: 1px solid #e4e2e2;
+}
+
+.modal__content__item img{
+  width: 70px;
+}
+
+.modal__content__item span{
+  display: block;
+}
+
+.modal__content__item .item__info span + span{
+  margin-top: 5px !important;
+}
+
+.item__info .info__quantity {
+  margin-top: 10px;
+}
+
+.item__info .info__quantity button,
+.item__info .info__quantity input{
+  width: 25px;
+  height: 25px;
+  text-align: center;
+}
+
+.item__info .info__quantity button{
+  background: #f0f0f0;
+  border: none;
+}
+
+.modal__content__item .item__final-price{
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.modal__content__item .item__trash{
+  height: 25px;
+  background: transparent;
+  border: none;
+  color: #7f7f7f;
+}
+
+/* ------------------ */
+
+.modal__content__subtotal,
+.modal__content__shipping,
+.modal__content__total,
+.modal__content__end {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #7f7f7f;
+  padding: 15px 0;
+  font-size: 14px;
+}
+
+.modal__content__shipping input{
+  height: 30px;
+  width: 120px;
+  padding: 0 5px;
+}
+
+.modal__content__shipping button{
+  height: 30px;
+  background: #fff;
+  border: 1px solid #000;
+  padding: 5px;
+  font-size: 12px;
+  color: #7f7f7f;
+}
+
+@media(max-width:400px) {
+  .shopping__modal .container{
+    margin: 0;
+  }
+  .modal__container {
+    width: 100%;
+  }
+}
+
+.modal__content__total {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.modal__content__end {
+  border: none;
+}
+
+.modal__content__end a{
+  color: #7f7f7f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal__content__end a:hover *{
+  color: #ffa200;
+}
+
+.modal__content__end a span{
+  text-decoration: underline;
+}
+
+.modal__content__end a i{
+  margin-right: 5px;
+  text-decoration: none;
+}
+
+.modal__content__end button {
+  width: 200px;
+  height: 50px;
+}
